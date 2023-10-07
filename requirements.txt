@@ -4,3 +4,7 @@ torch==2.0.1
 transformers==4.33.3
 sentence-transformers==2.2.2
 sentencepiece==0.1.99
+accelerate==0.23.0
+chromadb==0.4.13
+pypdf==3.16.2
+tiktoken==0.5.1
