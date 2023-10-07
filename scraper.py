@@ -21,7 +21,6 @@ def file_preprocessing(file):
     final_texts = ""
     for text in texts:
         final_texts = final_texts + text.page_content
-    print("FINAL", final_texts)
     return final_texts
 
 #LLM pipeline
@@ -66,7 +65,7 @@ def main():
                 temp_file.write(uploaded_file.read())
             with col1:
                 st.info("Uploaded File")
-                pdf_view = displayPDF(filepath)
+                # pdf_view = displayPDF(filepath)
 
             with col2:
                 summary = llm_pipeline(filepath)
